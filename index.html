@@ -56,8 +56,8 @@
   <p class="subtitle">Privacy Policy &nbsp;/&nbsp; Gizlilik Politikası</p>
 
   <div class="lang-toggle">
-    <button class="lang-btn active" onclick="setLang('en')">English</button>
-    <button class="lang-btn" onclick="setLang('tr')">Türkçe</button>
+    <button class="lang-btn" data-lang="en" onclick="setLang('en')">English</button>
+    <button class="lang-btn" data-lang="tr" onclick="setLang('tr')">Türkçe</button>
   </div>
 
   <!-- ENGLISH -->
@@ -243,9 +243,17 @@
       el.classList.toggle('visible', el.dataset.lang === lang);
     });
     document.querySelectorAll('.lang-btn').forEach(btn => {
-      btn.classList.toggle('active', btn.textContent.toLowerCase().includes(lang === 'en' ? 'english' : 'türkçe'));
+      btn.classList.toggle('active', btn.dataset.lang === lang);
     });
+    try { localStorage.setItem('fitsync_lang', lang); } catch(e) {}
   }
+
+  (function() {
+    const saved = (() => { try { return localStorage.getItem('fitsync_lang'); } catch(e) { return null; } })();
+    const browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+    const detected = saved || (browserLang.startsWith('tr') ? 'tr' : 'en');
+    setLang(detected);
+  })();
 </script>
 </body>
 </html>
