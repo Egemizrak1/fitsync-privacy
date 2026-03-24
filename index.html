@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FitSync – Privacy Policy</title>
+  <title>MyVitality – Privacy Policy</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -52,7 +52,7 @@
 <body>
 <div class="container">
 
-  <h1>FitSync</h1>
+  <h1>MyVitality</h1>
   <p class="subtitle">Privacy Policy &nbsp;/&nbsp; Gizlilik Politikası</p>
 
   <div class="lang-toggle">
@@ -65,12 +65,12 @@
 
     <p><strong>Effective date:</strong> March 20, 2026</p>
     <p>
-      FitSync ("we", "our", or "us") is committed to protecting your privacy.
+      MyVitality ("we", "our", or "us") is committed to protecting your privacy.
       This policy explains what data we collect, why we collect it, and how it is used.
     </p>
 
     <h2>1. Data We Collect</h2>
-    <p>FitSync collects the following categories of data:</p>
+    <p>MyVitality collects the following categories of data:</p>
     <ul>
       <li><strong>Health &amp; Fitness Data</strong> — heart rate, heart rate variability (HRV), blood oxygen (SpO2), step count, distance, active calories, resting calories, flights climbed, sleep duration and stages, and workout sessions. This data is read from Apple Health with your explicit permission.</li>
       <li><strong>Location Data</strong> — GPS coordinates collected only during an active workout session and only while the app is in use.</li>
@@ -89,7 +89,7 @@
     <h2>3. Health Data — Special Notice</h2>
     <p>
       Health and fitness data obtained from Apple Health (HealthKit) is used <strong>solely</strong>
-      to provide features within FitSync. This data is:
+      to provide features within MyVitality. This data is:
     </p>
     <ul>
       <li>Never sold to third parties.</li>
@@ -112,7 +112,7 @@
     </p>
 
     <h2>6. Third-Party Services</h2>
-    <p>FitSync uses the following third-party services:</p>
+    <p>MyVitality uses the following third-party services:</p>
     <ul>
       <li><strong>OpenStreetMap</strong> — map tiles for route display (no personal data sent).</li>
       <li><strong>Google Sign-In</strong> — optional authentication method (governed by Google's Privacy Policy).</li>
@@ -120,7 +120,7 @@
 
     <h2>7. Children's Privacy</h2>
     <p>
-      FitSync is not directed to children under 13. We do not knowingly collect personal
+      MyVitality is not directed to children under 13. We do not knowingly collect personal
       information from children.
     </p>
 
@@ -152,12 +152,12 @@
 
     <p><strong>Yürürlük tarihi:</strong> 20 Mart 2026</p>
     <p>
-      FitSync olarak gizliliğinizi korumayı taahhüt ediyoruz.
+      MyVitality olarak gizliliğinizi korumayı taahhüt ediyoruz.
       Bu politika, hangi verileri topladığımızı, neden topladığımızı ve nasıl kullandığımızı açıklar.
     </p>
 
     <h2>1. Topladığımız Veriler</h2>
-    <p>FitSync aşağıdaki veri kategorilerini toplar:</p>
+    <p>MyVitality aşağıdaki veri kategorilerini toplar:</p>
     <ul>
       <li><strong>Sağlık ve Fitness Verileri</strong> — kalp hızı, kalp hızı değişkenliği (HRV), kan oksijeni (SpO2), adım sayısı, mesafe, aktif kalori, bazal kalori, çıkılan kat, uyku süresi ve evreleri, antrenman seansları. Bu veriler, açık izninizle Apple Health'ten okunur.</li>
       <li><strong>Konum Verileri</strong> — yalnızca aktif bir antrenman sırasında ve yalnızca uygulama kullanımdayken toplanan GPS koordinatları.</li>
@@ -176,7 +176,7 @@
     <h2>3. Sağlık Verisi — Özel Bildirim</h2>
     <p>
       Apple Health'ten (HealthKit) elde edilen sağlık ve fitness verileri <strong>yalnızca</strong>
-      FitSync içindeki özellikleri sunmak amacıyla kullanılır. Bu veriler:
+      MyVitality içindeki özellikleri sunmak amacıyla kullanılır. Bu veriler:
     </p>
     <ul>
       <li>Üçüncü taraflara asla satılmaz.</li>
@@ -200,7 +200,7 @@
     </p>
 
     <h2>6. Üçüncü Taraf Hizmetler</h2>
-    <p>FitSync aşağıdaki üçüncü taraf hizmetleri kullanır:</p>
+    <p>MyVitality aşağıdaki üçüncü taraf hizmetleri kullanır:</p>
     <ul>
       <li><strong>OpenStreetMap</strong> — rota görüntüleme için harita karoları (kişisel veri gönderilmez).</li>
       <li><strong>Google ile Giriş</strong> — isteğe bağlı kimlik doğrulama yöntemi (Google'ın Gizlilik Politikası kapsamındadır).</li>
@@ -208,7 +208,7 @@
 
     <h2>7. Çocukların Gizliliği</h2>
     <p>
-      FitSync, 13 yaşın altındaki çocuklara yönelik değildir.
+      MyVitality, 13 yaşın altındaki çocuklara yönelik değildir.
       Çocuklardan bilerek kişisel bilgi toplamıyoruz.
     </p>
 
@@ -245,11 +245,11 @@
     document.querySelectorAll('.lang-btn').forEach(btn => {
       btn.classList.toggle('active', btn.dataset.lang === lang);
     });
-    try { localStorage.setItem('fitsync_lang', lang); } catch(e) {}
+    try { localStorage.setItem('myvitality_lang', lang); } catch(e) {}
   }
 
   (function() {
-    const saved = (() => { try { return localStorage.getItem('fitsync_lang'); } catch(e) { return null; } })();
+    const saved = (() => { try { return localStorage.getItem('myvitality_lang'); } catch(e) { return null; } })();
     const browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
     const detected = saved || (browserLang.startsWith('tr') ? 'tr' : 'en');
     setLang(detected);
